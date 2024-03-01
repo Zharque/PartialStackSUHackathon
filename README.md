@@ -24,3 +24,11 @@ Future Features
 ...
 Motto
 Find the job of your life! A new way of finding jobs for the new generation.
+
+
+...
+Demonstration
+presenter creates a business account
+swipes to a specific applicant account
+the applicant account is opened in a different browser and respond to the swipe
+they chat to each other and agree to communicate through email
