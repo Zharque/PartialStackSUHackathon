@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <%= stylesheet_link_tag 'signup1'%>
+</head>
+<body>
+<div class="popup active" id="signup">
+    <div class="form">
+    <form action="/signup_account" method="post">
+        <%= token_tag %>
+        <h2>Sign Up</h2>
+        <div class="form-element">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name" name="name">
+        </div>
+
+        <div class="form-element">
+            <label for="address">Email Address</label>
+            <input type="text" id="address" placeholder="Enter Email Address" name="address">
+        </div>
+
+        <div class="form-element">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" name="password">
+        </div>
+
+        <div class="form-element">
+            <label for="userType">User Type:</label>
+            <select id="user_type" name="user_type" name="user_type">
+                <option value="Applicant">Applicant</option>
+                <option value="Recruiter">Recruiter</option>
+            </select>
+        </div>
+
+        <div class="form-element">
+            <label for="expertiseField">Field of Expertise</label>
+            <input type="text" id="field" list="expertiseOptions" placeholder="Enter your field" name="field">
+            <datalist id="expertiseOptions">
+              <option value="Agriculture, Food, and Natural Resources"></option>
+              <option value="Architecture and Construction"></option>
+              <option value="Arts, Audio/Video Technology, and Communications"></option>
+              <option value="Business Management and Administration"></option>
+              <option value="Education and Training"></option>
+              <option value="Finance"></option>
+              <option value="Government and Public Administration"></option>
+              <option value="Health Science"></option>
+              <option value="Hospitality and Tourism"></option>
+              <option value="Human Services"></option>
+              <option value="Information Technology"></option>
+              <option value="Law, Public Safety, Corrections, and Security"></option>
+              <option value="Manufacturing"></option>
+              <option value="Marketing, Sales, and Service"></option>
+              <option value="Science, Technology, Engineering, and Mathematics (STEM)"></option>
+              <option value="Transportation, Distribution, and Logistics"></option>
+            </datalist>
+          </div>
+          
+        <div class="form-element">
+            <button>Register</button>
+        </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>

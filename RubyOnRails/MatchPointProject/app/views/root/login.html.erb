@@ -12,17 +12,17 @@
         <h2 style="text-align: center;">Login</h2>
         <div class="form-element">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter Email">
+            <input type="text" id="address" placeholder="Enter Email Address" name="address">
         </div>
         <div class="form-element">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Enter Password">
+            <input type="password" id="password" placeholder="Enter Password" name="password">
         </div>
         <div class="form-element">
-            <%= button_to "Sign In", test_path %>
+            <button type="submit">Sign In</button>
         </div>
         <div class="form-element">
-            <a href="#">Don't have an account? Sign Up</a>
+            <a href="/signup">Don't have an account? Sign Up</a>
         </div>
         <div class="form-element">
             <a href="#">Forgot Password</a>
