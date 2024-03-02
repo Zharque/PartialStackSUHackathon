@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Registration Form</title>
-    <link rel="stylesheet" href="Signup.css">
+    <%= stylesheet_link_tag 'signup'%>
 </head>
 <body>
 <div class="popup active">
@@ -33,7 +33,6 @@
         </div>
     </div>
 </div>
-
 <!-- Sign Up Form -->
 <div class="popup" id="signup">
     <div class="close-btn"> &times; </div>
@@ -80,6 +79,6 @@
         </div>
     </div>
 </div>
-<script src="signup.js"></script>
+    <%= javascript_include_tag 'signup'%>
 </body>
 </html>

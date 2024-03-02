@@ -22,6 +22,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+        // Existing JavaScript code for form handling
+    
+        const profileImageInput = document.getElementById('profileImage');
+        profileImageInput.addEventListener('change', function(event) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                // Here, you can create an <img> element to display the selected image
+                // For demonstration, let's log the base64 image to console
+                console.log(e.target.result);
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        });
+    });
+    
+
     // Event listeners for the radio buttons
     applicantBtn.addEventListener('change', function() {
         if (this.checked) toggleFields(false);
