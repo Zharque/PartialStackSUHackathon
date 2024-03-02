@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login and Registration Form</title>
-    <%= stylesheet_link_tag 'signup'%>
+    <link rel="stylesheet" href="Signup.css">
 </head>
 <body>
 <div class="popup active">
@@ -40,6 +40,10 @@
     <div class="form">
         <h2>Sign Up</h2>
         <div class="form-element">
+            <div class="form-element">
+                <label for="profileImage">Profile Image</label>
+                <input type="file" id="profileImage" accept="image/*">
+            </div>
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Enter Name">
         </div>
@@ -66,19 +70,16 @@
             <input type="radio" id="recruiter" name="userType" value="Recruiter">
             <label for="recruiter">Recruiter</label>
         </div>
-
         <div class="form-element" id="occupationField" style="display: none;">
             <label for="occupation">Occupation/Corporation</label>
             <input type="text" id="occupation" placeholder="Enter Occupation/Corporation">
         </div>
         
-
         <div class="form-element">
             <button>Register</button>
         </div>
     </div>
 </div>
-
-<%= javascript_include_tag 'signup'%>
+<script src="signup.js"></script>
 </body>
 </html>
