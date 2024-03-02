@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     var typed = new Typed(".text", {
-        strings: ["a Web Developer", "a Software Engineer", "into Cybersecurity"],
+        strings: ["Tech", "Business", "Retail", "Healthcare", "Education", "Entertainment", "Sports"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,

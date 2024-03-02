@@ -8,7 +8,7 @@
 
 .hero {
     width: 100%;
-    min-height: 100vh;
+    min-height: 10vh;
     background: #eceaff;
     color: #525252;
 }
@@ -34,12 +34,6 @@ nav {
     font-size: 20px; 
 }
 
-.user-pic {
-    width: 90px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-left: 30px;
-}
 
 nav ul {
     width: 100%;
@@ -70,6 +64,7 @@ nav ul li a {
 .sub-menu-wrap.open-menu {
     max-height: 400px;
     display: block;
+    z-index: 1000;
 }
 
 .sub-menu {
@@ -77,6 +72,15 @@ nav ul li a {
     padding: 20px;
     margin: 10px;   
     display: block;
+}
+
+/* USER PROFILE MENU*/
+.user-pic {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    vertical-align: middle;
 }
 
 .user-info {
@@ -94,12 +98,14 @@ nav ul li a {
     margin-right: 15px;
 }
 
+/* SUB-MENU */
 .sub-menu hr {
     border: 0;
     height: 1px;
     width: 100%;
     background: #ccc;
     margin: 15px 0 10px;
+    z-index: 1000;
 }
 
 .sub-menu-link {
@@ -151,12 +157,13 @@ nav ul li a {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 70px 10% 0;
 }
 
 .home-content {
     max-width: 600px;
+    color: rgb(221, 221, 221);
 }
 
 .home-content h3 {
