@@ -30,6 +30,15 @@ body {
     margin-bottom: 15px;
 }
 
+.form-element label, .form-element select {
+    font-size: 12px; /* Adjust this value as needed */
+}
+
+.form-element select option {
+    font-size: 12px; /* This ensures options also inherit the same font size, for consistency */
+}
+
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -91,7 +100,6 @@ button:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-
 
 /* Radio buttons and their labels */
 input[type="radio"] {
