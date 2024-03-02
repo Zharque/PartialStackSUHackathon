@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :user_accounts
+  post "/signup_user" => "root#signup"
   get "/new" => "user_accounts#new"
   get 'user_accounts/new'
   get 'user_accounts/create'
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   get "/signup" => "root#signup"
   get "/test" => "root#test"
-  root "root#index"
+  get "/index" => "root#index"
+  root "root#index" 
 
 end
