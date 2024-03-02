@@ -11,17 +11,23 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+    background: linear-gradient(#ffdfdf 0%, #4f77c2 100%);
+    background-image: url('dark-bg.png');
+    background-size: cover;
 }
 .wrapper{
+    align-items: center;
     background: #fff;
-    width: 580px;
+    width: 800px;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
 }
 h2{
     text-align: center;
+    color:rgb(15, 0, 50);
+    font-size: 40px;
+    margin: 10px;
 }
 hr{
     width: 100px;
@@ -34,13 +40,15 @@ hr{
     margin: 8px;
 }
 img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 10px;
+    border: 3px solid #291e4f;
+    align-items: center;
 }
 h4,p{
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
     margin: 7px;
 }
