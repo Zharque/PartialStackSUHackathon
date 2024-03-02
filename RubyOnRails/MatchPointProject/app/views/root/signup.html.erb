@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Login and Registration Form</title>
     <%= stylesheet_link_tag 'signup'%>
 </head>
 <body>
 <div class="popup active">
-    <div class="close-btn"> &times; </div>
     <div class="form">
         <h2>Login</h2>
         <div class="form-element">
@@ -27,10 +26,59 @@
             <button>Sign In</button>
         </div>
         <div class="form-element">
+            <a href="#signup">Don't have an account? Sign Up</a>
+        </div>
+        <div class="form-element">
             <a href="#">Forgot Password</a>
         </div>
     </div>
 </div>
+
+<!-- Sign Up Form -->
+<div class="popup" id="signup">
+    <div class="close-btn"> &times; </div>
+    <div class="form">
+        <h2>Sign Up</h2>
+        <div class="form-element">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Name">
+        </div>
+        <div class="form-element">
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate">
+        </div>
+        <div class="form-element">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="Enter Address">
+        </div>
+        <div class="form-element">
+            <label for="skills">Skills</label>
+            <input type="text" id="skills" placeholder="Enter Skills">
+        </div>
+        <div class="form-element">
+            <label for="expertise">Expertise</label>
+            <input type="text" id="expertise" placeholder="Enter Expertise">
+        </div>
+        <div class="form-element">
+            <span>User Type:</span>
+            <input type="radio" id="applicant" name="userType" value="Applicant">
+            <label for="applicant">Applicant</label>
+            <input type="radio" id="recruiter" name="userType" value="Recruiter">
+            <label for="recruiter">Recruiter</label>
+        </div>
+
+        <div class="form-element" id="occupationField" style="display: none;">
+            <label for="occupation">Occupation/Corporation</label>
+            <input type="text" id="occupation" placeholder="Enter Occupation/Corporation">
+        </div>
+        
+
+        <div class="form-element">
+            <button>Register</button>
+        </div>
+    </div>
+</div>
+
 <%= javascript_include_tag 'signup'%>
 </body>
 </html>
