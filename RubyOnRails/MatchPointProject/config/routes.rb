@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
   resources :user_accounts
   post "/signup_user" => "root#signup"
-  get "/new" => "user_accounts#new"
-  get 'user_accounts/new'
-  get 'user_accounts/create'
-  get 'users/new'
-  get 'users/create'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
@@ -16,6 +11,8 @@ Rails.application.routes.draw do
   get "/signup" => "root#signup"
   get "/test" => "root#test"
   get "/index" => "root#index"
+  get "/login" => "root#login"
+  post "/test" => "root#test"
   root "root#index" 
 
 end
