@@ -12,8 +12,10 @@ Rails.application.routes.draw do
   get "/signup" => "root#signup1"
   get "/test" => "root#test"
   get "/index" => "root#index"
+  get "/home" => "root#index"
   get "/login" => "root#login"
+  get "/match" => "root#matching"
   post "/test" => "root#test"
-  root "root#index" 
+  root "root#home" 
 
 end
