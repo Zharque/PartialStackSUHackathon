@@ -11,5 +11,6 @@ class RootController < ApplicationController
     @account.user_type = params[:user_type]
    
     @account.save
+   
   end
 end

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const closeButtons = document.querySelectorAll('.close-btn');
-    const signUpLink = document.querySelector('a[href="#signup"]');
+        
     const loginPopup = document.querySelector('.popup.active'); // Initially the login form
     const signUpPopup = document.querySelector('.popup#signup');
     const applicantBtn = document.getElementById('applicant');
